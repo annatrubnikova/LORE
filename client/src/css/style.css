@@ -1,0 +1,1160 @@
+body {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #B8C0D9;
+}
+
+a {
+    text-decoration: none;
+    color: #B8C0D9;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerBlock {
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerBlock .appName {
+    color: white;
+    font-size: 40px;
+}
+
+button {
+    width: 200px;
+    line-height: 48px;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: transparent;
+    color: #BA73D9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #BA73D9;
+    color: white;
+}
+
+.buttonWithIcon {
+    width: 54px;
+    cursor: pointer;
+}
+
+.logoutIcon {
+    background-color: white;
+}
+
+button:hover .logoutIcon {
+    background-color: #BA73D9;
+    color: white;
+}
+
+.headerBlock img {
+    width: 54px;
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: white;
+    height: 53px;
+}
+
+.headerBlock .menuButtonsUser {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.menuList a {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px dashed white;
+    color: white;
+    text-transform: lowercase;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menuBlock {
+    text-align: center;
+}
+
+.menuListActive {
+    background-color: #BA73D9;
+    color: white;
+    border-color: transparent !important;
+}
+
+.loginBlock,
+.newCategoryCreate,
+.editCategoryBlock {
+    background-color: white;
+    padding: 30px 20px;
+    width: 20%;
+    height: 300px;
+    margin-left: 40%;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.newCategoryCreate {
+    height: 130px !important;
+    margin-left: 0 !important;
+    width: 25%;
+}
+
+.shadowEffect {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loginBlock h2 {
+    color: #BA73D9;
+    margin-top: 10px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.input-container {
+    position: relative;
+    width: 200px;
+}
+
+.rounded-input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.error-icon {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 30px;
+    font-size: 20px;
+    padding-top: 5px;
+    background-color: rgb(255, 66, 129);
+    color: white;
+    border-radius: 50%;
+    display: none;
+    z-index: 2;
+}
+
+.rounded-input.invalid+.error-icon {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.rounded-input.invalid {
+    border-color: rgb(255, 66, 129);
+    background-color: #80868c5e;
+}
+
+.error-tooltip {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    background-color: white;
+    border: 1px dashed rgb(255, 66, 129);
+    color: rgb(255, 66, 129);
+    width: 200px;
+    line-height: 23px;
+    padding: 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    display: none;
+}
+
+.rounded-input.invalid+.error-icon:hover+.errorIsShown {
+    display: block;
+}
+
+.input-container input,
+.categoryContainer .fields-container .rounded-input {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: white;
+    border-radius: 30px;
+    border-color: transparent;
+    color: #BA73D9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #BA73D9;
+}
+
+.input-container input::placeholder {
+    color: #B8C0D9;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #BA73D9 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.loginForm .submitBtn {
+    background-color: #BA73D9;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.loginForm .submitBtn:hover {
+    color: #BA73D9;
+    background-color: white;
+}
+
+.anotherBtnForAuth {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.regBlock {
+    height: 450px;
+    margin-top: 0;
+}
+
+.regBlock .loginForm {
+    height: 80%;
+}
+
+.newCategoryCreate,
+.newCategoryCreateForm .input-container,
+.categoryContainer .fields-container,
+.categoryContainer .btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.newCategoryCreateForm .input-container {
+    height: 50px;
+}
+
+.newCategoryCreateForm .editCategoryInput {
+    width: 100% !important;
+}
+
+.editCategoryInput1 {
+    margin-bottom: 8px;
+}
+
+.newCategoryCreateForm .editCategoryInput:focus {
+    border: 1px dashed #BA73D9;
+}
+
+.newCategoryCreate {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.newCategoryCreateForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.newCategoryCreateForm .buttonWithIcon {
+    background-color: #BA73D9;
+    color: white;
+}
+
+.categoriesBlock {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    align-items: start;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 30px;
+    width: 20%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.categoryContainer .fields-container {
+    align-items: start;
+}
+
+.categoryContainer .btns-container {
+    align-items: center;
+}
+
+.categoryContainer .btns-container {
+    height: 100%;
+}
+
+.categoryContainer .btns-container .buttonWithIcon {
+    background-color: #BA73D9;
+    color: white;
+    font-size: 18px;
+}
+
+.categoryContainer .btns-container .buttonWithIcon:hover {
+    color: #BA73D9;
+    background-color: #B8C0D9;
+}
+.categoryContainer .fields-container .rounded-input {
+    text-align: start;
+    margin: 0;
+    width: 90%;
+}
+
+.newCategoryCreate {
+    background-color: rgb(192, 255, 192);
+}
+
+.editCategoryBlock {
+    background-color: #ffffba;
+    margin-left: 40% !important;
+    height: 230px !important;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newCategoryCreate span,
+.editCategoryBlock span {
+    color: #B8C0D9;
+    margin-left: 10px;
+}
+
+.categoryContainer .fields-container p:first-of-type,
+.categoryContainer .btns-container button:first-of-type {
+    margin-bottom: 8px;
+    text-overflow: ellipsis;
+}
+
+.categoryContainer .fields-container p:first-of-type:hover{
+    background-color: #a34ac9;
+}
+
+.categoryContainer .fields-container p:nth-of-type(2) {
+    font-size: 16px;
+    color: #B8C0D9;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.newCategoryCreate .newCategoryCreateForm .error-tooltip {
+    line-height: 12px !important;
+}
+
+.newCategoryCreate .newCategoryCreateForm .input-container input {
+    width: 130%;
+}
+
+.editCategoryForm {
+    width: 100%;
+}
+
+.editCategoryBlock textarea {
+    resize: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.editCategoryBlock span {
+    margin-right: auto;
+}
+
+.editCategoryForm .input-container {
+    width: 90%;
+    left: 5%;
+}
+
+.editCategoryForm .input-container:first-child .error-tooltip {
+    line-height: 36px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.newCategoryCreate .newCategoryCreateForm div:first-child .error-icon {
+    right: -76px;
+}
+
+.newCategoryCreate .newCategoryCreateForm div:first-child .error-tooltip {
+    width: 130%;
+    line-height: 22px !important;
+}
+
+.postCategory {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+}
+
+.postBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 10%;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+.postBlock h2,
+.postBlock h2 a {
+    color: #BA73D9;
+}
+
+.onePostBlock {
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+.onePostContent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 8px;
+}
+
+.onePostContent .postImage {
+    width: 100%;
+    align-self: center;
+}
+
+.onePostInfo {
+    width: 90%;
+}
+
+.onePostContentTitleAndLikes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.likesInfo,
+.editDeleteCommentInfo {
+    width: 37%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likesInfo .buttonWithIcon,
+.editDeleteCommentInfo .buttonWithIcon,
+.editCommentContentAndBtn .buttonWithIcon {
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 32px;
+    width: 40px;
+    height: 40px;
+}
+
+.likesInfo div {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.postAuthorAndBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postAuthorAndBtn {
+    width: 90%;
+}
+
+.postAuthor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 10%;
+}
+
+.postAuthorAvaAndName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postAuthorAvaAndName img {
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    margin-right: 8px;
+}
+
+.postAuthorAvaAndName span {
+    font-size: 16px;
+    color: #BA73D9;
+}
+
+.postAuthorHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postAuthorHeader .post-author {
+    color: #BA73D9;
+}
+
+.postAuthorHeader img,
+.commentsBlock img {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+
+.postDateTime {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #BA73D9;
+    margin-top: 8px;
+}
+
+.postAuthorAndBtn button {
+    background-color: #BA73D9;
+}
+
+.postAuthorAndBtn button a {
+    color: white;
+}
+
+.postContent {
+    font-weight: lighter;
+    color: #B8C0D9;
+}
+
+.postImage {
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.editCategoryCreateForm .input-container .error-icon {
+    right: -15px;
+}
+
+.editCategoryCreateForm .input-container .error-tooltip {
+    width: 100%;
+    line-height: 24px !important;
+}
+
+.users-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    flex-flow: row wrap;
+    gap: 2%;
+}
+
+.users-div .buttonWithIcon {
+    background-color: #BA73D9;
+    color: white;
+}
+
+.userBlock {
+    width: 12%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+    width: 60%;
+}
+
+.userInfoFullname {
+    margin-bottom: 8px;
+}
+
+.userInfoFullname a {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #BA73D9;
+}
+
+.userInfoText {
+    font-size: 18px;
+    color: #BA73D9;
+}
+
+.userInfoRating,
+.userInfoInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.userInfoLabel,
+.userInfoRatingLabel {
+    font-size: 16px;
+    color: #B8C0D9;
+    font-weight: lighter;
+}
+
+.users-ava {
+    border-radius: 30px;
+    width: 54px;
+    height: 54px;
+}
+
+.oneUserBlock {
+    width: 20%;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+.oneUserBlock .userInfoInput {
+    margin-bottom: 16px;
+}
+
+.oneUserBlock .userInfoRating,
+.oneUserBlock .userInfoInput {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.oneUserBlock .userInfo {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.oneUserBtns {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-container .rounded-input {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #BA73D9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container .rounded-input:focus {
+    border: 1px dashed #BA73D9;
+    outline: none;
+}
+
+.form-container .form-label {
+    color: #BA73D9;
+}
+
+.form-checkbox-group {
+    width: 200%;
+    padding: 20px 16px;
+    background-color: white;
+    color: #BA73D9;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.form-checkbox-group span {
+    font-size: x-large;
+    color: #BA73D9;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-checkbox-group .form-input-title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.form-checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-checkbox-label .form-checkbox-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-checkbox-label .form-checkbox-input:checked~.checkmark:after {
+    display: block;
+}
+
+.form-checkbox-label .checkmark:after {
+    left: 24px;
+    top: -8px;
+    width: 8px;
+    height: 12px;
+    border: solid #BA73D9;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.form-textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    resize: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+    background-color: white;
+    color: #BA73D9;
+}
+
+.form-textarea:focus {
+    border: 1px dashed #BA73D9;
+    outline: none;
+}
+
+.form-textarea::-webkit-scrollbar {
+    border-radius: 100px;
+    width: 10px;
+}
+
+.form-textarea::-webkit-scrollbar-thumb {
+    background-color: #BA73D9;
+    border-radius: 100px;
+}
+
+.form-textarea::-webkit-scrollbar-track {
+    margin: 15px 0;
+    border-radius: 100px;
+    background-color: #ccc;
+}
+
+.form-container .pass-button {
+    margin-top: 10px;
+}
+
+.form-container .pass-button:hover {
+    margin-top: 10px;
+    background-color: #BA73D9;
+    color: white;
+}
+
+.changePostForm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.changePostInput {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+.changePostInput label {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.autoCenter {
+    align-self: end;
+    margin-right: 50%;
+}
+
+.chooseFileSection {
+    width: auto;
+    padding: 10px 16px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #BA73D9;
+}
+
+
+.changePostForm button {
+    margin-bottom: 28px;
+}
+
+.password-reset h2 {
+    color: #955baf
+}
+
+.password-reset p {
+    color: rgb(165, 67, 67);
+}
+
+.password-reset .rounded-input {
+    margin-bottom: 10px;
+}
+
+.page-404 span {
+    display: flex;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+}
+
+.show-cats {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.show-cats span {
+    padding: 10px;
+    background-color: #BA73D9;
+    border-radius: 30px;
+}
+
+.commentsBlock {
+    padding: 10px 20px;
+    border: 1px dashed #B8C0D9;
+    border-radius: 30px;
+}
+
+.writeCommentBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.writeCommentBlock input {
+    width: calc(100% - 60px);
+    padding-left: 20px;
+}
+
+.writeCommentBlock input::placeholder {
+    color: #B8C0D9;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.writeCommentBlock button {
+    line-height: normal;
+    font-size: 16px;
+}
+
+.commentAuthorName {
+    color: #BA73D9;
+    margin-left: 8px;
+}
+
+.commentContent {
+    font-weight: lighter;
+    color: #565656;
+    margin-left: 38px;
+    text-align: start;
+}
+
+.commentAuthorInfo {
+    display: flex;
+    width: 100%;
+    align-items: center
+}
+
+.oneCommentBlock,
+.editCommentBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.oneCommentBlock .btns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.editDeleteCommentInfo {
+    justify-content: end;
+}
+
+.editCommentContentAndBtn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postUser {
+    margin: 10px 50px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    align-items: center;
+}
+
+.login-menu {
+    color: #BA73D9;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+
+.input-file-text {
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: left;
+    height: 40px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 6px 0px 0 6px;
+    border: 1px solid #ddd;
+}
+
+.input-file-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #BA73D9;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    background-color: white;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.input-file input[type=file]:focus+.input-file-btn {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.input-file:hover .input-file-btn {
+    background-color: #BA73D9;
+    color: white;
+}
+
+.input-file:active .input-file-btn {
+    background-color: white;
+}
+
+.input-file input[type=file]:disabled+.input-file-btn {
+    background-color: #eee;
+}
+
+.select-image {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    background-color: #fff;
+    color: #B8C0D9;
+    cursor: pointer;
+    outline: none;
+}
+
+select option {
+    background-color: #fff;
+    color: #B8C0D9;
+}
+
+select:focus {
+    border-color: #B8C0D9;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.filter-options select {
+    margin: 10px;
+}
+
+.pages-handle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+    margin-left: 44%;
+    margin-bottom: 10px;
+}
+
+.pages-handle span {
+    padding: 8px 14px;
+    border: 1px dashed white;
+    border-radius: 8px;
+    color: #BA73D9;
+    font-size:x-large
+}
+
+.newCategoryCreateForm.editCategoryCreateForm .buttonWithIcon {
+    margin-left: 15%;
+    width: 54px;
+    padding: 0px 10px 0px 10px;
+}
+
+.input-help {
+    width: 50%;
+}
+
+.fav-buttons {
+    width: 200px;
+    font-size: small;
+    line-height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

@@ -17,6 +17,7 @@ This project is a website that allows an unauthorized user to:
 3. View user ratings.
     - View specific user profile.
 4. Sign up / Reset password / Sign in.
+
 Authorized user:
 1. Have all the capabilities of an unauthorized user.
 2. Interact with posts.
@@ -34,6 +35,7 @@ Authorized user:
     - Change login/fullname/email.
     - Delete profile.
 4. Log out.
+
 Admin:
 1. Have all the capabilities of an authorized user.
 2. Interact with categories.
@@ -50,7 +52,7 @@ Admin:
     - Create new user/admin.
     - Change user role.
 ### Database:
-We needed eight tables for our database:
+There is eight tables for database:
 
 - First table users. Simple table for storing info about users.
 
@@ -135,15 +137,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ## Demonstration on youtube
 [My Project presentation](https://youtu.be/clrqZ5buY4U)
 
-### Features
-
-## Server
+## Features Server
 
 - [Node JS](nodejs.org)
 - [Express JS](expressjs.com)
 - [Nodemailer](https://nodemailer.com)
 - [MySQL](https://www.mysql.com)
 
-## Client
+## Features Client
 - [React](https://react.dev)
 - [Redux](https://redux.js.org)
